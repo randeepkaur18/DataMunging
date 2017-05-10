@@ -1,19 +1,15 @@
-
 // imported log4js module
-
 let log4js = require('log4js');
 let logger = log4js.getLogger();
 module.exports = function convert(startYear)
 {
 	if(isNaN(startYear))
 	{
-
 		// throw an error if startYear is not provided or startYear is not a number or startyear is NaN
 		throw new Error('Not a number');
 	}
 	else
 	{
-
 		// var csv = require('fast-csv');
 		let readLine = require('readline');
 		let fs = require('fs');
@@ -40,7 +36,6 @@ module.exports = function convert(startYear)
 		{
 			if(i === 0)
 			{
-
 				// this will clear the junk data in the file
 				let cleanedLine = line.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
 				cleanedLine = line.split(',');
@@ -66,7 +61,6 @@ module.exports = function convert(startYear)
 		});
 
 		// close event of readline module
-
 		lineReader.on('close', ()=>{
 			logger.debug('File closed');
 		});
