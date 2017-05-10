@@ -4,7 +4,11 @@
   "scripts": {
     "test": "mocha",
     "build": "gulp build",
+<<<<<<< HEAD
     "execute": "node js/foodFactsRandeep.js",
+=======
+    "execute": "node js/IndiaCensusAmardeep.js",
+>>>>>>> 1133ada0bd74b02503e891546717d040ebeb8e17
     "execute": "node js/ageconverter"
   },
   "author": "StackRoute",
